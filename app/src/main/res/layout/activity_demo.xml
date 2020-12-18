@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DemoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/meet_remote_render"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/meet_local_render"
+            android:layout_width="240dp"
+            android:layout_height="180dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="连接" />
+
+        <Button
+            android:id="@+id/publish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="发布" />
+
+        <Button
+            android:id="@+id/subscribe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="订阅" />
+
+        <Button
+            android:id="@+id/unsubscribe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="取消订阅" />
+    </LinearLayout>
+</LinearLayout>
